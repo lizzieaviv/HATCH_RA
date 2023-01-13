@@ -1,6 +1,6 @@
 ---
 title: "Prenatal HATCH Qualtrics Data: Inventory Cleaning"
-author: "NEST Lab (Lizzie Aviv is the best)"
+author: "NEST Lab (Lizzie Aviv)"
 date: "`r Sys.Date()`"
 output:
   html_document:
