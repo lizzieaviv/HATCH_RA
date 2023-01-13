@@ -1,0 +1,184 @@
+---
+title: "Script References"
+author: "Lizzie Aviv"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    df_print: paged
+    toc: true
+    toc_float: true
+---
+
+# Routine Scripts
+## Rename column
+```{r}
+# Get Column Numbers
+cols <- which(colnames(df.pn)=="LEC_1.pn.mom"):which(colnames(df.pn)=="LEC_17.pn.dad")
+# Set new names
+setnames(df.pn, 
+         old = colnames(df.pn[,cols]), 
+         new = gsub(pattern = "_", replacement = "", x = colnames(df.pn[,cols])))
+```
+
+## Reorder columns
+```{r}
+df.pn <- df.pn %>% 
+  relocate(c(col1.dad:col10.dad), .after = col10.mom)
+```
+
+## Recode item scores (old)
+```{r}
+df.pn <- df.pn %>%
+# Re-code items
+  mutate_at(vars(c(columns)), 
+            funs(recode(., 
+                        '1' = '0',
+                        '2' = '1',
+                        '3' = '2',
+                        '4' = '3')))
+```
+
+## Recode item scores (new)
+```{r}
+df.pn <- df.pn %>%
+# Re-code items
+  mutate_at(vars(c(columns)), 
+            ~ recode(., 
+                     '1' = '0',
+                     '2' = '1',
+                     '3' = '2',
+                     '4' = '3'))
+
+```
+
+## Reverse score
+```{r}
+# Reverse Code Key
+reverse_key <- setNames(c(1:5), 5:1)
+
+# Reverse Score Q's 1, 3, 6
+df.pn <- df.pn %>%
+  mutate(across(c(ECR9.pn, ECR11.pn, ECR20.pn, ECR22.pn,
+                  ECR26.pn:ECR31.pn, 
+                  ECR33.pn:ECR36.pn),
+            ~ recode(., !!!reverse_key)))
+
+# Mark reversed scores with `_r`
+setnames(x = df.pn, 
+         old = c("RF1.pn", "RF3.pn", "RF6.pn"), 
+         new = gsub(pattern = ".pn", 
+                    replacement = "_r.pn", 
+                    x = c("RF1.pn", "RF3.pn", "RF6.pn")))
+```
+
+## Calculate summary scores
+```{r}
+df.pn <- df.pn %>% 
+  
+  # Tell R that we want to take the mean across a row
+  rowwise() %>%
+  
+  # Tell R that scores are numeric
+  mutate_at(vars(c(vars)), as.numeric) %>%
+  
+  # Calculate total scores/subscales
+  mutate(var_tot.pn = round(mean(c_across(vars), na.rm = T), 3)) %>%
+  
+  # Move the total score/subscales so they come immediately after the measures
+  relocate(var_tot.pn, .after = var)
+```
+
+## Create variable labels
+```{r}
+df.pn <- df.pn %>%
+  # Convert to numeric
+  mutate_at(vars(c(vars)), as.numeric) %>%
+  # Create value and variable labels
+  mutate_at(vars(c(vars)),
+            ~ labelled(., 
+                     c(label = value, label = value),
+                     label = "Variable Label"))
+```
+
+# Utility Functions
+## View some selection of variables
+```{r}
+view(select(df.pn1, c(CoupleID, LES1_impact.pn:LES22_impact.pn, LES_pos.pn))) 
+```
+
+## Find Column Number
+```{r}
+which( colnames(df.pn)=="PregSymp_distress.pn.mom" )
+```
+
+## Find Value 
+```{r}
+df.pn$CoupleID[is.na(df.pn$LES.1_1.pn) == T]
+```
+
+## Count frequencies
+```{r}
+table(as.factor(df.pn$AAS2_r.pn)) #freq
+```
+
+## Count NAs in a column 
+```{r}
+sum(is.na(df.pn$COPE_diseng.pn))
+```
+
+## Convert `NaN` to `NA`
+```{r}
+df.pn <- df.pn %>%
+  mutate(across(c(col1:coln), ~na_if(., "NaN"))) 
+```
+
+## Github packages
+```{r}
+library(usethis)
+library(gitcreds)
+gitcreds_set()
+#Current (8.5.22) token: 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
+```
+
+# Sample Inventory
+## Sample Inventory {.tabset}
+### Notes {.tabset}
+#### General Notes
+#### Scoring Instructions
+#### SPSS Syntax Note
+
+#### Qualtrics Scoring
+```{r eval = !knitr::is_latex_output(), echo = FALSE}
+knitr::include_graphics('../scoring_instructions/images/0_illnesses_scoring.png')
+```
+### Script
+#### Rename `` columns
+#### Recode item scores
+#### Calculate summary scores
+### Print {.tabset}
+#### Moms
+```{r echo=FALSE}
+df.pn %>% 
+  filter(Parent == "mom") %>%
+  select(c(CoupleID)) %>% ungroup() %>%
+  slice_sample(n = 6) %>%
+  # Table Formatting
+  kbl(centering = T) %>%
+  kable_styling(bootstrap_options = c("hover", "condensed"), full_width = F) %>%
+  row_spec(0:6, align = "center") %>%
+  scroll_box(width = "100%") 
+```
+
+#### Dads
+```{r echo=FALSE}
+df.pn %>% 
+  filter(Parent == "dad") %>%
+  select(c(CoupleID)) %>% ungroup() %>%
+  slice_sample(n = 6) %>% 
+  # Table Formatting
+  kbl(centering = T) %>%
+  kable_styling(bootstrap_options = c("hover", "condensed")) %>%
+  row_spec(1:6, align = "center") %>%
+  scroll_box(width = "100%") 
+```
+
