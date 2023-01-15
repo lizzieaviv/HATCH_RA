@@ -15,7 +15,7 @@ editor_options:
 ---
 
 ```{r include=FALSE}
-knitr::opts_chunk$set(fig.width=2, fig.height=2, fig.align = "center")
+#knitr::opts_chunk$set(fig.width=2, fig.height=2, fig.align = "center")
 ```
 
 # To Do List
@@ -106,7 +106,7 @@ df.pn %>%
 - First I looked at the Qualtrics data and found weird cases, then I found the real due dates from the master log, seen in the image below
 
 ```{r  echo = FALSE}
-knitr::include_graphics("../scoring_instructions/images/0_demographics/duedate.png")
+#knitr::include_graphics("../scoring_instructions/images/0_demographics/duedate.png")
 ```
 
 
@@ -152,7 +152,7 @@ df.pn %>%
 ##### Visit Dates from Master Log
 - *First I looked at the Qualtrics data and found weird cases, then I found the real visit dates from the master log, seen below*
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/0_demographics/pn.visitdate.png')
+#knitr::include_graphics('../scoring_instructions/images/0_demographics/pn.visitdate.png')
 ```
 
 #### Script
@@ -219,7 +219,7 @@ df.pn %>%
 ### Relationship Status {.tabset}
 #### Qualtrics Scoring
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/0_demographics/relationship_status_scoring.png')
+#knitr::include_graphics('../scoring_instructions/images/0_demographics/relationship_status_scoring.png')
 ```
 
 
@@ -238,7 +238,7 @@ df.pn <- df.pn %>%
 ### Ethnicity {.tabset}
 #### Qualtrics Scoring
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/0_demographics/ethnicity_scoring.png')
+#knitr::include_graphics('../scoring_instructions/images/0_demographics/ethnicity_scoring.png')
 ```
 
 
@@ -263,7 +263,7 @@ df.pn <- df.pn %>%
 ### Education {.tabset}
 #### Qualtrics Scoring
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/0_demographics/education_scoring.png')
+#knitr::include_graphics('../scoring_instructions/images/0_demographics/education_scoring.png')
 ```
 
 #### Script
@@ -347,7 +347,7 @@ df.pn %>%
 -   Illnesses.2 = Current/Past
 
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/0_demographics/illnesses_scoring.png')
+#knitr::include_graphics('../scoring_instructions/images/0_demographics/illnesses_scoring.png')
 ```
 
 ### Script
@@ -472,17 +472,17 @@ df.pn %>%
 ### Qualtrics Question and Scoring Information
 #### Smoker Question
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/0_demographics/smoker_question.png')
+#knitr::include_graphics('../scoring_instructions/images/0_demographics/smoker_question.png')
 ```
 
 #### Smoker Scoring
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/0_demographics/smoker_scoring.png')
+#knitr::include_graphics('../scoring_instructions/images/0_demographics/smoker_scoring.png')
 ```
 
 #### Pack Per Day Questions
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/0_demographics/packperday_question.png')
+#knitr::include_graphics('../scoring_instructions/images/0_demographics/packperday_question.png')
 ```
 
 
@@ -586,13 +586,13 @@ df.pn <- relocate(df.pn,
 ### Qualtrics Scoring
 Were you born in the United States?
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/0_misc_demographics/Born_US_scoring.png')
+#knitr::include_graphics('../scoring_instructions/images/0_misc_demographics/Born_US_scoring.png')
 ```
 Which country were you born in?
 
 How old were you when you came to the United States?
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/0_misc_demographics/Immigration_Age_scoring.png')
+#knitr::include_graphics('../scoring_instructions/images/0_misc_demographics/Immigration_Age_scoring.png')
 ```
 
 ### Script
@@ -625,7 +625,7 @@ df.pn <- df.pn %>%
 ## Planned Pregnancy {.tabset}
 ### Qualtrics Scoring
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/0_misc_demographics/Preg_Planned_scoring.png')
+#knitr::include_graphics('../scoring_instructions/images/0_misc_demographics/Preg_Planned_scoring.png')
 ```
 
 ### Script
@@ -653,7 +653,7 @@ df.pn <- df.pn %>%
 ## Paid Leave {.tabset}
 ### Qualtrics Scoring
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/0_misc_demographics/Paid_Leave_scoring.png')
+#knitr::include_graphics('../scoring_instructions/images/0_misc_demographics/Paid_Leave_scoring.png')
 ```
 
 ### Script
@@ -674,7 +674,7 @@ df.pn <- df.pn %>%
 ## Time Off {.tabset}
 ### Qualtrics Scoring
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/0_misc_demographics/Time_Off_scoring.png')
+#knitr::include_graphics('../scoring_instructions/images/0_misc_demographics/Time_Off_scoring.png')
 ```
 
 ### Script
@@ -696,7 +696,7 @@ df.pn <- df.pn %>%
 
 ### Qualtrics Scoring
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/0_misc_demographics/Income_scoring.png')
+#knitr::include_graphics('../scoring_instructions/images/0_misc_demographics/Income_scoring.png')
 ```
 
 ### Script
@@ -716,7 +716,7 @@ df.pn <- df.pn %>%
 ## Occupation Questions {.tabset}
 ### Qualtrics Scoring
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/0_misc_demographics/Occupation_Status_scoring.png')
+#knitr::include_graphics('../scoring_instructions/images/0_misc_demographics/Occupation_Status_scoring.png')
 ```
 
 ### Script
@@ -740,7 +740,7 @@ df.pn <- df.pn %>%
 ### Qualtrics Scoring
 
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/0_misc_demographics/Insurance_Status_scoring.png')
+#knitr::include_graphics('../scoring_instructions/images/0_misc_demographics/Insurance_Status_scoring.png')
 ```
 
 ### Script
@@ -820,7 +820,7 @@ df.pn %>%
 
 ###### *Means from Fernandez & Dufey, 2015*
 ```{r, AAS-screenshot-means, echo=FALSE}
-knitr::include_graphics('../scoring_instructions/images/AAS_means.png')
+#knitr::include_graphics('../scoring_instructions/images/AAS_means.png')
 ```
 
 #### SPSS Syntax Notes
@@ -831,12 +831,12 @@ knitr::include_graphics('../scoring_instructions/images/AAS_means.png')
 #### Qualtrics Scoring
 ##### *Scores for Items 1-18*
 ```{r, AAS-screenshot-qualtrics-scores, echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/AAS_qualtrics_scores.png')
+#knitr::include_graphics('../scoring_instructions/images/AAS_qualtrics_scores.png')
 ```
 
 ##### *Qualtrics for Items 1-18*
 ```{r,  AAS-screenshot-qualtrics-items, echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/AAS_qualtrics_items.png')
+#knitr::include_graphics('../scoring_instructions/images/AAS_qualtrics_items.png')
 ```
 
 ### Script
@@ -939,19 +939,19 @@ df.pn %>%
 #### Scoring Instructions
 ##### *Items*
 ```{r, BDI-screenshot-items,  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/BDI_items.png')
+#knitr::include_graphics('../scoring_instructions/images/BDI_items.png')
 ```
 
 ##### *Score Ranges*
 ```{r, BDI-screenshot-cutoffs,  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/BDI_cutoffs.png')
+#knitr::include_graphics('../scoring_instructions/images/BDI_cutoffs.png')
 ```
 
 - Likert scales ranging from 0 to 3
 
 ###### *Means from Gomes-Oliveria et al., 2012*
 ```{r, BDI-screenshot-means, echo=FALSE}
-knitr::include_graphics('../scoring_instructions/images/BDI_means.png')
+#knitr::include_graphics('../scoring_instructions/images/BDI_means.png')
 ```
 
 #### SPSS Syntax Notes
@@ -965,37 +965,37 @@ knitr::include_graphics('../scoring_instructions/images/BDI_means.png')
 #### Qualtrics Scoring
 ##### *Scoring for Items 1-15, 17, 19-20*
 ```{r, BDI-screenshot-qualtrics-scoring-1to21, echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/BDI_qualtrics_scores_q1.png')
+#knitr::include_graphics('../scoring_instructions/images/BDI_qualtrics_scores_q1.png')
 ```
 
 ##### *Scoring for Item 16*
 ```{r, BDI-screenshot-qualtrics-scoring-16,  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/BDI_qualtrics_scores_q16.png')
+#knitr::include_graphics('../scoring_instructions/images/BDI_qualtrics_scores_q16.png')
 ```
 
 ##### *Scoring for Item 18*
 ```{r, BDI-screenshot-qualtrics-scoring-18,  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/BDI_qualtrics_scores_q18.png')
+#knitr::include_graphics('../scoring_instructions/images/BDI_qualtrics_scores_q18.png')
 ```
 
 #####  *Qualtrics Items 1-5*
 ```{r, BDI-screenshot-qualtrics-items-1to5,  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/BDI_qualtrics_items_q1to5.png')
+#knitr::include_graphics('../scoring_instructions/images/BDI_qualtrics_items_q1to5.png')
 ```
 
 ##### *Qualtrics Items 6-11*
 ```{r, BDI-screenshot-qualtrics-items-6to11, echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/BDI_qualtrics_items_q6to11.png')
+#knitr::include_graphics('../scoring_instructions/images/BDI_qualtrics_items_q6to11.png')
 ```
 
 ##### *Qualtrics Items 12-16*
 ```{r, BDI-screenshot-qualtrics-items-12to16,  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/BDI_qualtrics_items_q12to16.png')
+#knitr::include_graphics('../scoring_instructions/images/BDI_qualtrics_items_q12to16.png')
 ```
 
 ##### *Qualtrics Items 17-21*
 ```{r, BDI-screenshot-qualtrics-items-17to21,  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/BDI_qualtrics_items_q17to21.png')
+#knitr::include_graphics('../scoring_instructions/images/BDI_qualtrics_items_q17to21.png')
 ```
 
 ### Script
@@ -1098,8 +1098,8 @@ Instructions](https://github.com/lizzieaviv/HATCH/blob/ba74eeb3fc5b450d0ebcb33ba
 -   Items are in the same order as scoring instructions
 -   Item responses are coded the same as scoring instructions
 
-```{r eval = !knitr::is_latex_output(), echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/BFI_qualtrics.png')
+```{r eval = !#knitr::is_latex_output(), echo = FALSE}
+#knitr::include_graphics('../scoring_instructions/images/BFI_qualtrics.png')
 ```
 
 
@@ -1232,8 +1232,8 @@ df.pn %>%
 * Comprised of 14 2-item subscales indicative of different coping strategies.
 
 #### Qualtrics Scoring
-```{r eval = !knitr::is_latex_output(), echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/COPE_qualtrics.png')
+```{r eval = !#knitr::is_latex_output(), echo = FALSE}
+#knitr::include_graphics('../scoring_instructions/images/COPE_qualtrics.png')
 ```
 
 ### Script
@@ -1322,11 +1322,11 @@ df.pn %>%
 instructions](https://github.com/lizzieaviv/HATCH/blob/ba74eeb3fc5b450d0ebcb33ba69147e3351f7f3c/scoring_instructions/PDFs/DAS_scoring.pdf)
 
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/DAS_scales.png')
+#knitr::include_graphics('../scoring_instructions/images/DAS_scales.png')
 ```
 
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/DAS_scales_descriptions.png')
+#knitr::include_graphics('../scoring_instructions/images/DAS_scales_descriptions.png')
 ```
 
 #### SPSS Syntax Notes
@@ -1535,7 +1535,7 @@ df.pn %>%
 
 #### Qualtrics Scoring
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/ECR_qualtrics.png')
+#knitr::include_graphics('../scoring_instructions/images/ECR_qualtrics.png')
 ```
 
 ### Script
@@ -1654,7 +1654,7 @@ instructions](https://github.com/lizzieaviv/HATCH/blob/ba74eeb3fc5b450d0ebcb33ba
 
 ##### *Means from 1980 Paper*
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/IRI_means.png')
+#knitr::include_graphics('../scoring_instructions/images/IRI_means.png')
 ```
 
 #### SPSS Syntax Notes
@@ -1677,7 +1677,7 @@ knitr::include_graphics('../scoring_instructions/images/IRI_means.png')
 
 ##### *Qualtrics Scores for Participants 18-100*
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/IRI qualtrics.png')
+#knitr::include_graphics('../scoring_instructions/images/IRI qualtrics.png')
 ```
 
 ### Script
@@ -1815,8 +1815,8 @@ df.pn %>%
 - None
 
 #### Qualtrics Scoring
-```{r eval = !knitr::is_latex_output(), echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/ISS_qualtrics_scoring.png')
+```{r eval = !#knitr::is_latex_output(), echo = FALSE}
+#knitr::include_graphics('../scoring_instructions/images/ISS_qualtrics_scoring.png')
 ```
 
 ### Script
@@ -1921,26 +1921,26 @@ df.pn %>%
 
 ##### LAP-R Likert Scale (from Erci)
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/LAPR_likert.png')
+#knitr::include_graphics('../scoring_instructions/images/LAPR_likert.png')
 ```
 
 
 ##### LAP-R Subscales (from Erci)
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/LAPR_subscales.png')
+#knitr::include_graphics('../scoring_instructions/images/LAPR_subscales.png')
 ```
 
 
 ##### Item 16
 * Erci removed item 16 ("I have a philosophy of life that gives my existence significance") from the coherence scale because of inadequate factor loadings
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/LAPR_removed_items.png')
+#knitr::include_graphics('../scoring_instructions/images/LAPR_removed_items.png')
 ```
 
 
 * Confirmation of item 16's wording can be found [here](https://onlinelibrary.wiley.com/doi/epdf/10.1002/pon.1755)
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/LAPR_item_16.png')
+#knitr::include_graphics('../scoring_instructions/images/LAPR_item_16.png')
 ```
 
 #### SPSS Syntax Note
@@ -1951,13 +1951,13 @@ knitr::include_graphics('../scoring_instructions/images/LAPR_item_16.png')
 
 #### Qualtrics Scoring
 ##### Qualtrics Scores
-```{r eval = !knitr::is_latex_output(), echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/LAPR_qualtrics_scoring.png')
+```{r eval = !#knitr::is_latex_output(), echo = FALSE}
+#knitr::include_graphics('../scoring_instructions/images/LAPR_qualtrics_scoring.png')
 ```
 
 ##### Qualtrics Questions
-```{r eval = !knitr::is_latex_output(), echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/LAPR_qualtrics_questions.png')
+```{r eval = !#knitr::is_latex_output(), echo = FALSE}
+#knitr::include_graphics('../scoring_instructions/images/LAPR_qualtrics_questions.png')
 ```
 
 ### Script
@@ -2052,22 +2052,22 @@ df.pn %>%
 #### Qualtrics Scoring
 ##### *LEC Questions Before Couple 65*
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/LEC_questions_before65.png')
+#knitr::include_graphics('../scoring_instructions/images/LEC_questions_before65.png')
 ```
 
 ##### *LEC Scoring Before Couple 65*
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/LEC_scores_before65.png')
+#knitr::include_graphics('../scoring_instructions/images/LEC_scores_before65.png')
 ```
 
 ##### *LEC Questions After Couple 65*
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/LEC_questions_after65.png')
+#knitr::include_graphics('../scoring_instructions/images/LEC_questions_after65.png')
 ```
 
 ##### *LEC Scoring After Couple 65*
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/LEC_questions_after65.png')
+#knitr::include_graphics('../scoring_instructions/images/LEC_questions_after65.png')
 ```
 
 
@@ -2163,13 +2163,13 @@ df.pn %>%
     - To account for the scale's intended purpose, we've recoded all impact scores as NA when happened = 0
 
 ##### *Subscale scoring instructions*
-```{r eval = !knitr::is_latex_output(), echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/LES_subscales.png')
+```{r eval = !#knitr::is_latex_output(), echo = FALSE}
+#knitr::include_graphics('../scoring_instructions/images/LES_subscales.png')
 ```
 
 ##### *Means from 1978 paper Paper*
-```{r eval = !knitr::is_latex_output(), echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/LES_means.png')
+```{r eval = !#knitr::is_latex_output(), echo = FALSE}
+#knitr::include_graphics('../scoring_instructions/images/LES_means.png')
 ```
 
 #### SPSS Syntax Note
@@ -2177,13 +2177,13 @@ knitr::include_graphics('../scoring_instructions/images/LES_means.png')
 
 #### Qualtrics Scoring
 ##### *Coded values*
-```{r eval = !knitr::is_latex_output(), echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/LES_qualtrics_scoring.png')
+```{r eval = !#knitr::is_latex_output(), echo = FALSE}
+#knitr::include_graphics('../scoring_instructions/images/LES_qualtrics_scoring.png')
 ```
 
 ##### *Qualtrics items*
-```{r eval = !knitr::is_latex_output(), echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/LES_qualtrics_items.png')
+```{r eval = !#knitr::is_latex_output(), echo = FALSE}
+#knitr::include_graphics('../scoring_instructions/images/LES_qualtrics_items.png')
 ```
 
 ### Script
@@ -2340,18 +2340,18 @@ df.pn %>%
 - Quality: n = 11
 - Preoccupation: n = 8
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/MAAS.PAAS_MAASsubscales.png')
+#knitr::include_graphics('../scoring_instructions/images/MAAS.PAAS_MAASsubscales.png')
 ```
 *PAAS*
 - Quality: n = 10
 - Preoccupation: n = 6
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/MAAS.PAAS_PAASsubscales.png')
+#knitr::include_graphics('../scoring_instructions/images/MAAS.PAAS_PAASsubscales.png')
 ```
 
 ##### *Scale Means*
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/MAAS.PAAS_means.png')
+#knitr::include_graphics('../scoring_instructions/images/MAAS.PAAS_means.png')
 ```
 
 #### SPSS Syntax Note
@@ -2363,7 +2363,7 @@ knitr::include_graphics('../scoring_instructions/images/MAAS.PAAS_means.png')
 - Paternal Attachment: Q90.1-Q105 (16 questions total)
 - Scoring goes from 1-5
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/MAAS.PAAS_qualtrics.png')
+#knitr::include_graphics('../scoring_instructions/images/MAAS.PAAS_qualtrics.png')
 ```
 
 
@@ -2695,13 +2695,13 @@ filter(Parent == "dad") %>%
 
 ##### Mean Values of Subscales
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/MOS_means.png')
+#knitr::include_graphics('../scoring_instructions/images/MOS_means.png')
 ```
 
 #### Scoring Instruction
 - [Subscales and author's scoring instructions](https://github.com/lizzieaviv/HATCH/blob/ba74eeb3fc5b450d0ebcb33ba69147e3351f7f3c/scoring_instructions/PDFs/MOS_scales.pdf)
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/MOS_scoring.png')
+#knitr::include_graphics('../scoring_instructions/images/MOS_scoring.png')
 ```
 
 #### SPSS Syntax Notes
@@ -2709,7 +2709,7 @@ knitr::include_graphics('../scoring_instructions/images/MOS_scoring.png')
 
 #### Qualtrics Scoring
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/MOS_qualtrics.png')
+#knitr::include_graphics('../scoring_instructions/images/MOS_qualtrics.png')
 ```
 
 ### Script
@@ -2792,7 +2792,7 @@ df.pn %>%
 
 #### Scoring Instructions
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/PAS_Scoring.png')
+#knitr::include_graphics('../scoring_instructions/images/PAS_Scoring.png')
 ```
     
 - [More information on scoring](https://cds.psych.ucla.edu/projects/)
@@ -2812,18 +2812,18 @@ knitr::include_graphics('../scoring_instructions/images/PAS_Scoring.png')
 
 ##### Question Renaming Syntax from SPSS
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/PAS_SPSS_names.png')
+#knitr::include_graphics('../scoring_instructions/images/PAS_SPSS_names.png')
 ```
 
 #### Qualtrics Scoring
 ##### PAS Questions 1-6
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/PAS_Qualtrics1.png')
+#knitr::include_graphics('../scoring_instructions/images/PAS_Qualtrics1.png')
 ```
 
 ##### PAS Questions 7-13
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/PAS_Qualtrics2.png')
+#knitr::include_graphics('../scoring_instructions/images/PAS_Qualtrics2.png')
 ```
 
 ### Script
@@ -3107,7 +3107,7 @@ df.pn %>%
 
 #### Qualtrics Scoring
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/PSAM_Qualtrics.png')
+#knitr::include_graphics('../scoring_instructions/images/PSAM_Qualtrics.png')
 ```
 
 ### Script
@@ -3237,23 +3237,23 @@ instructions](https://github.com/lizzieaviv/HATCH/blob/ba74eeb3fc5b450d0ebcb33ba
 ##### *Question 5*
 *Question 5 has sub-questions a-j*
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/PSQI_q5.png')
+#knitr::include_graphics('../scoring_instructions/images/PSQI_q5.png')
 ```
 
 ##### *Questions 6-7*
 *Scoring for 7 is the same as for 6 (which is listed below)*
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/PSQI_q6-7.png')
+#knitr::include_graphics('../scoring_instructions/images/PSQI_q6-7.png')
 ```
 
 ##### *Question 8*
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/PSQI_q8.png')
+#knitr::include_graphics('../scoring_instructions/images/PSQI_q8.png')
 ```
 
 ##### *Question 9*
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/PSQI_q9.png')
+#knitr::include_graphics('../scoring_instructions/images/PSQI_q9.png')
 ```
 
 ### Script {.tabset}
@@ -3712,7 +3712,7 @@ df.pn %>%
 
 ##### *Score Ranges*
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/PSS_cutoffs.png')
+#knitr::include_graphics('../scoring_instructions/images/PSS_cutoffs.png')
 ```
 
 #### Scoring Instructions
@@ -3725,7 +3725,7 @@ knitr::include_graphics('../scoring_instructions/images/PSS_cutoffs.png')
 
 #### Qualtrics Scoring
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/PSS_qualtrics.png')
+#knitr::include_graphics('../scoring_instructions/images/PSS_qualtrics.png')
 ```
 
 ### Script
@@ -3936,30 +3936,30 @@ df.pn %>%
 
 ##### *Manual Scoring Manual* 
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/SCL_scoring.png')
+#knitr::include_graphics('../scoring_instructions/images/SCL_scoring.png')
 ```
 
 ##### *Subscales* 
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/SCL_subscales.png')
+#knitr::include_graphics('../scoring_instructions/images/SCL_subscales.png')
 ```
 
 ##### *Global Scales*
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/SCL_GSI.png')
+#knitr::include_graphics('../scoring_instructions/images/SCL_GSI.png')
 ```
 
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/SCL_PSDI.png')
+#knitr::include_graphics('../scoring_instructions/images/SCL_PSDI.png')
 ```
 
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/SCL_PST.png')
+#knitr::include_graphics('../scoring_instructions/images/SCL_PST.png')
 ```
 
 ##### *Scale Means*
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/SCL_means.png')
+#knitr::include_graphics('../scoring_instructions/images/SCL_means.png')
 ```
 
 #### SPSS Syntax Notes
@@ -3988,7 +3988,7 @@ knitr::include_graphics('../scoring_instructions/images/SCL_means.png')
 #### Qualtrics Scoring
 
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/SCL_qualtrics.png')
+#knitr::include_graphics('../scoring_instructions/images/SCL_qualtrics.png')
 ```
     
 -   Our qualtrics items go in order, but skip over the omitted items such that
@@ -4185,7 +4185,7 @@ df.pn %>%
 
 #### Scoring Instructions
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/STAI_scoring_and_cutoffs.png')
+#knitr::include_graphics('../scoring_instructions/images/STAI_scoring_and_cutoffs.png')
 ```
 
 - [Author's scoring instructions](https://github.com/lizzieaviv/HATCH/blob/ba74eeb3fc5b450d0ebcb33ba69147e3351f7f3c/scoring_instructions/PDFs/STAI%20scoring.pdf)
@@ -4317,7 +4317,7 @@ df.pn %>%
 
 #### Scoring Instructions
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/WIAF_scoring.png')
+#knitr::include_graphics('../scoring_instructions/images/WIAF_scoring.png')
 ```
 
 #### SPSS Syntax Notes
@@ -4328,7 +4328,7 @@ knitr::include_graphics('../scoring_instructions/images/WIAF_scoring.png')
 
 #### Qualtrics Scoring
 ```{r  echo = FALSE}
-knitr::include_graphics('../scoring_instructions/images/WIAF_Qualtrics.png')
+#knitr::include_graphics('../scoring_instructions/images/WIAF_Qualtrics.png')
 ```
 
 ### Script
