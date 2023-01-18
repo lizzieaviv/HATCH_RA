@@ -137,7 +137,7 @@ df.pn <- df.pn %>%
 library(usethis)
 library(gitcreds)
 gitcreds_set()
-#Current token: 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
+#Current token (1/17/23): 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
 ```
 
 # Sample Inventory
